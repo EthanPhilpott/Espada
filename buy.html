@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Esapada: Buy</title>
+        <link rel="stylesheet" href="buy.css">
+    </head>
+    <body>
+        <header>
+            <div class="title">
+                <a href="index.html">
+                    <img src="" alt="">
+                </a>
+                <h1>Esapada</h1>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Application</li>
+                    <li>Packages</li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- 
+                ██╗░░░░░░█████╗░░█████╗░██╗░░██╗  ██████╗░███████╗██╗░░░░░░█████╗░░██╗░░░░░░░██╗
+                ██║░░░░░██╔══██╗██╔══██╗██║░██╔╝  ██╔══██╗██╔════╝██║░░░░░██╔══██╗░██║░░██╗░░██║
+                ██║░░░░░██║░░██║██║░░██║█████═╝░  ██████╦╝█████╗░░██║░░░░░██║░░██║░╚██╗████╗██╔╝
+                ██║░░░░░██║░░██║██║░░██║██╔═██╗░  ██╔══██╗██╔══╝░░██║░░░░░██║░░██║░░████╔═████║░
+                ███████╗╚█████╔╝╚█████╔╝██║░╚██╗  ██████╦╝███████╗███████╗╚█████╔╝░░╚██╔╝░╚██╔╝░
+                ╚══════╝░╚════╝░░╚════╝░╚═╝░░╚═╝  ╚═════╝░╚══════╝╚══════╝░╚════╝░░░░╚═╝░░░╚═╝░░
+            -->
+            <!-- vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv -->
+            <!-- Set the class .popup to "display: none;" and I will do the rest -->
+            <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+            <div class="popup">
+                <h2>Thank you!</h2>
+                <h3>We will get back to you as soon as possible</h3>
+            </div>
+
+            <article>
+                <section class="form">
+                    <div class="contact-info">
+                        <h3>Contact Info</h3>
+                        <label for="fname">First Name</label>
+                        <input type="text" name="fname" id="fname">
+                        <label for="lname">Last Name</label>
+                        <input type="text" name="lname" id="lname">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email">
+                        <label for="phoneNum">Phone Number</label>
+                        <input type="text" name="phoneNum" id="phoneNum">
+                    </div>
+                    
+                    <div class="payment-info">
+                        <h3>Credit Card Info</h3>
+                        <label for="">Card Number</label>
+                        <input type="text" name="cc" id="cc">
+                        <label for="cardholder">Cardholder Name</label>
+                        <input type="text" name="cardholder" id="cardholder">
+                        <label for="expire">Expiration Date</label>
+                        <input type="text" name="expire" id="expire">
+                        <label for="ccv">CCV Numbers</label>
+                        <input type="text" name="ccv" id="ccv">
+                    </div>
+
+                    <div class="package">
+                        <select name="packageType" id="packageType">
+                            <option value="silver">Silver</option>
+                            <option value="silver">Gold</option>
+                            <option value="silver">Platnum</option>
+                            <option value="silver">Self Defense</option>
+                        </select>
+                    </div>
+
+                    <button type="submit">Submit</button>
+                </section>
+            </article>
+        </main>
+
+        <footer>
+            <ul>
+                <li>
+                    <p>Esapada</p>
+                </li>
+                <li>
+                    <p>Made by Ethan Philpott, Dylan Thomas, Allison Corallis (Sorry for spelling), Jordan Wingo</p>
+                </li>
+                <li>
+                    <p>(Copyright Info)</p>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="buy.js"></script>
+    </body>
+</html>
