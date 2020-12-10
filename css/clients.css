@@ -10,8 +10,22 @@ body {
 
 }
 
+h1{
+    position: absolute;
+    
+}
+
 nav{
-    background-color: #C64935;
+    background-color: #1d1c1b;
+    color: #F1EEE3;
+    text-align: right;
+    width: 80%;
+    padding: 15px 20px;
+    margin-left: 170px;
+}
+li{
+    list-style-type: none;
+    display: inline-block;
 }
 
 /*color palette*/
