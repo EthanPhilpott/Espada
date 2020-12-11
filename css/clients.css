@@ -57,7 +57,7 @@ a:hover {
 
 
 /*products*/
-main {
+/*main {
     background-color: var(--black);
     padding: 40px;
     margin-left: 15px;
@@ -80,6 +80,22 @@ section h2{
 
 p{
     position: relative;
+    text-align: right;
     left: 1rem;
     top: -2rem;
+}*/
+.grid{
+    background-color: var(--black);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 50rem;
+    grid-template-rows: 20rem 20rem 20rem 20rem;
+    padding: 3rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+footer{
+    padding: 3rem;
 }
