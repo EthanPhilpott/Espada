@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: none;
 }
 
 :root {
@@ -91,7 +92,8 @@ p{
     align-items: center;
     grid-template-columns: 50rem;
     grid-template-rows: 20rem 20rem 20rem 20rem;
-    padding: 3rem;
+    border: none;
+    padding: 2rem;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 }
