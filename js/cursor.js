@@ -6,24 +6,25 @@ class Cursor {
     }
 
     CreateCursorCss () {
-        let curs = [document.createElement('div'), document.createElement('div'), document.createElement('div')]
+        this.cursor.style.position            = "absolute";
+        this.cursor.style.display             = "grid";
+        this.cursor.style.gridTemplateColumns = "5px 3px 5px"
+        this.cursor.style.gridTemplateRows    = "5px 3px 5px"
 
-        curs[0].style.width    = '3px';
-        curs[0].style.height   = '8px';
-
-        curs[1].style.width    = '8px';
-        curs[1].style.height   = '3px';
-
-        curs[2].style.width   = '3px';
-        curs[2].style.height  = '3px';
-
-        for (let cur of curs) {
-            cur.style.position = "absolute"
-            cur.style.top      = "50%"
-            cur.style.left     = "50%"
-            this.cursor.appendChild(cur)
+        for (let y = 1; y <= 3; y++) {
+            for (let x = 1; x <= 3; x++) {
+                let temp = document.createElement('div')
+                temp.style.gridRow    = `${x} / ${x + 1}`
+                temp.style.gridColumn = `${y} / ${y + 1}`
+                if ((x % 2 === 0 || y % 2 === 0) && x !== y) {
+                    temp.style.backgroundColor = "#827E74"
+                    temp.style.border = "1px solid black"
+                }
+                this.cursor.appendChild(temp)
+            }
         }
-        document.appendChild(this.cursor)
+
+        document.body.appendChild(this.cursor)
     }
 }
 
