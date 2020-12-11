@@ -9,8 +9,8 @@ class Cursor {
     CreateCursorCss () {
         this.cursor.style.position            = "absolute";
         this.cursor.style.display             = "grid";
-        this.cursor.style.gridTemplateColumns = "5px 3px 5px";
-        this.cursor.style.gridTemplateRows    = "5px 3px 5px";
+        this.cursor.style.gridTemplateColumns = "6px 4px 6px";
+        this.cursor.style.gridTemplateRows    = "6px 4px 6px";
         this.cursor.style.transform           = "translate(0, 0)";
         this.cursor.style.top                 = "0"
         this.cursor.style.left                = "0"
