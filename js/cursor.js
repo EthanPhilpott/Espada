@@ -3,13 +3,17 @@ class Cursor {
     constructor () {
         this.cursor = document.createElement('div');
         this.CreateCursorCss()
+        this.Events()
     }
 
     CreateCursorCss () {
         this.cursor.style.position            = "absolute";
         this.cursor.style.display             = "grid";
-        this.cursor.style.gridTemplateColumns = "5px 3px 5px"
-        this.cursor.style.gridTemplateRows    = "5px 3px 5px"
+        this.cursor.style.gridTemplateColumns = "6px 4px 6px";
+        this.cursor.style.gridTemplateRows    = "6px 4px 6px";
+        this.cursor.style.transform           = "translate(0, 0)";
+        this.cursor.style.top                 = "0"
+        this.cursor.style.left                = "0"
 
         for (let y = 1; y <= 3; y++) {
             for (let x = 1; x <= 3; x++) {
@@ -25,6 +29,12 @@ class Cursor {
         }
 
         document.body.appendChild(this.cursor)
+    }
+
+    Events () {
+        window.addEventListener('mousemove', (e) => {
+            this.cursor.style.transform = `translate(${e.clientX - 6.5 + 'px'}, ${e.clientY - 6.5 + 'px'})`
+        })
     }
 }
 
