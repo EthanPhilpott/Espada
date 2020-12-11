@@ -32,11 +32,13 @@ body {
 /*navbar*/
 h1 {
     position: absolute;
+    left: 18rem;
+    top: 4rem;
 }
 nav {
     background-color: var(--black);
     text-align: right;
-    padding: 25px 25px;
+    padding: 60px 50px;
     box-shadow: 3rem 0rem 3rem black;
     margin-top: -20px;
 }
@@ -57,15 +59,14 @@ a:hover {
 /*products*/
 main {
     background-color: var(--black);
-    padding: 50px;
+    padding: 40px;
     margin-left: 15px;
     margin-right: 15px;
-
-    box-shadow: 3rem 0rem 3rem black;
+    box-shadow: 0rem 0rem 10rem black;
 }
 section {
     background-color: var(--red);
-    padding: 5rem;
+    padding: 4rem;
     margin-top: 10px;
 }
 a:hover{
@@ -74,5 +75,11 @@ a:hover{
 section h2{
     position: relative;
     font-size: 2.5rem;
-    right: 33rem;
+    right: 34rem;
+}
+
+p{
+    position: relative;
+    left: 1rem;
+    top: -2rem;
 }
