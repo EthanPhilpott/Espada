@@ -11,7 +11,7 @@ class Cursor {
     }
 
     CreateCursorCss () {
-        this.cursor.style.position            = "absolute";
+        this.cursor.style.position            = "fixed";
         this.cursor.style.display             = "grid";
         this.cursor.style.gridTemplateColumns = "6px 4px 6px";
         this.cursor.style.gridTemplateRows    = "6px 4px 6px";
