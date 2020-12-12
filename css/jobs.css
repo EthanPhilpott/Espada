@@ -51,10 +51,7 @@ li {
 a {
     color: #F1EEE3;
     text-decoration: none;
-<<<<<<< HEAD
-=======
     border: black 2px;
->>>>>>> 7b783d449a889d48f60015debcb18aa658e835c9
 }
 a:hover {
     color: var(--red);
