@@ -42,11 +42,11 @@ class Cursor {
 
             this.translation.x += (this.mouse.x - this.translation.x)
             this.translation.y += (this.mouse.y - this.translation.y)
+            console.log(document.width, document.innerHeight)
+            if (this.translation.x > document.body.clientWidth  - 16) this.translation.x = document.body.clientWidth  - 16;
+            if (this.translation.y > document.body.clientHeight - 16) this.translation.y = document.body.clientHeight - 16;
 
-            if (this.translation.x > window.innerWidth - 16)  this.translation.x = window.innerWidth  - 16;
-            if (this.translation.y > window.innerHeight - 16) this.translation.y = window.innerHeight - 16;
-
-            this.cursor.style.transform = `translate(${this.translation.x}px, ${this.translation.y}px)`;
+            this.cursor.style.transform = "translate(" + this.translation.x + 'px, ' + this.translation.y + 'px)';
         })
     }
 }
