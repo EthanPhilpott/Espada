@@ -44,7 +44,7 @@ h1 {
 nav {
     background-color: var(--black);
     text-align: right;
-    padding: 3.90rem 50px;
+    padding: 3.50rem 50px;
     box-shadow: 3rem 0rem 3rem black;
     margin-top: -20px;
 }
@@ -75,6 +75,7 @@ footer{
     padding: 1.5rem;
 }
 /*everything below is unique to this css file*/
+
 
 /*products*/
 /*main {
@@ -110,8 +111,8 @@ p{
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 50rem;
-    grid-template-rows: 20rem 20rem 20rem 20rem;
+    grid-template-columns: 65rem;
+    grid-template-rows: 15rem 15rem 15rem 15rem;
     border: none;
     padding: 2rem;
     margin-left: 1.5rem;
