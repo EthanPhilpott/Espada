@@ -1,4 +1,5 @@
 "use strict"
+
 class Cursor {
     constructor () {
         this.cursor = document.createElement('div');
@@ -18,6 +19,7 @@ class Cursor {
         this.cursor.style.top                 = "0"
         this.cursor.style.left                = "0"
         this.cursor.style.zIndex              = '99'
+        this.cursor.style.pointerEvents       = "none"
 
         for (let y = 1; y <= 3; y++) {
             for (let x = 1; x <= 3; x++) {
@@ -42,7 +44,7 @@ class Cursor {
 
             this.translation.x += (this.mouse.x - this.translation.x)
             this.translation.y += (this.mouse.y - this.translation.y)
-            console.log(document.width, document.innerHeight)
+            
             if (this.translation.x > document.body.clientWidth  - 16) this.translation.x = document.body.clientWidth  - 16;
             if (this.translation.y > document.body.clientHeight - 16) this.translation.y = document.body.clientHeight - 16;
 
