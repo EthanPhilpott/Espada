@@ -1,9 +1,11 @@
+/*everything here is default, do not touch*/
 *, *::after, *::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     cursor: none;
 }
+
 
 :root {
     /* Variables */
@@ -13,7 +15,7 @@
     --yellow: #FFE144;
     --white: #F1EEE3;
 }
-
+    
 /*the whole page*/
 html{
     background-color: #6c0404;
@@ -29,8 +31,8 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     min-height: 100vh;
 }
-
-
+    
+    
 /*navbar*/
 h1 {
     position: absolute;
@@ -42,7 +44,7 @@ h1 {
 nav {
     background-color: var(--black);
     text-align: right;
-    padding: 50px 50px;
+    padding: 3.90rem 50px;
     box-shadow: 3rem 0rem 3rem black;
     margin-top: -20px;
 }
@@ -60,7 +62,6 @@ a:hover {
     color: var(--red);
 }
 
-
 /*images*/
 #logo{
     position: absolute;
@@ -69,3 +70,8 @@ a:hover {
     right: 80rem;
     top: 15px;
 }
+
+footer{
+    padding: 3rem;
+}
+/*everything below is unique to this css file*/
