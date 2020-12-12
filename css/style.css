@@ -27,6 +27,7 @@ body {
     text-align: center;
     color: #F1EEE3;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    min-height: 100vh;
 }
 
 
