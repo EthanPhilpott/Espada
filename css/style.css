@@ -33,13 +33,15 @@ body {
 /*navbar*/
 h1 {
     position: absolute;
-    left: 18rem;
-    top: 4rem;
+    left: 14rem;
+    top: 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3rem;
 }
 nav {
     background-color: var(--black);
     text-align: right;
-    padding: 60px 50px;
+    padding: 50px 50px;
     box-shadow: 3rem 0rem 3rem black;
     margin-top: -20px;
 }
@@ -51,9 +53,18 @@ li {
 a {
     color: #F1EEE3;
     text-decoration: none;
+    border: black 2px;
 }
 a:hover {
     color: var(--red);
 }
 
 
+/*images*/
+#logo{
+    position: absolute;
+    width: 260px;
+    height: 130px;
+    right: 80rem;
+    top: 15px;
+}
