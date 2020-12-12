@@ -4,6 +4,9 @@ class Cursor {
         this.cursor = document.createElement('div');
         this.CreateCursorCss()
         this.Events()
+        
+        this.mouse = {x : 0, x : 0}
+        this.translation = {x : 0, y : 0}
     }
 
     CreateCursorCss () {
@@ -14,6 +17,7 @@ class Cursor {
         this.cursor.style.transform           = "translate(0, 0)";
         this.cursor.style.top                 = "0"
         this.cursor.style.left                = "0"
+        this.cursor.style.zIndex              = '99'
 
         for (let y = 1; y <= 3; y++) {
             for (let x = 1; x <= 3; x++) {
@@ -32,8 +36,17 @@ class Cursor {
     }
 
     Events () {
-        window.addEventListener('mousemove', (e) => {
-            this.cursor.style.transform = `translate(${e.clientX - 6.5 + 'px'}, ${e.clientY - 6.5 + 'px'})`
+        window.addEventListener ("mousemove", (e) => {
+            this.mouse.x = e.clientX;
+            this.mouse.y = e.clientY;
+
+            this.translation.x += (this.mouse.x - this.translation.x)
+            this.translation.y += (this.mouse.y - this.translation.y)
+
+            if (this.translation.x > window.innerWidth - 16)  this.translation.x = window.innerWidth  - 16;
+            if (this.translation.y > window.innerHeight - 16) this.translation.y = window.innerHeight - 16;
+
+            this.cursor.style.transform = `translate(${this.translation.x}px, ${this.translation.y}px)`;
         })
     }
 }
