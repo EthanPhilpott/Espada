@@ -1,0 +1,139 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none;
+}
+
+:root {
+    /* Variables */
+
+    /* Main */
+    --black : #1d1c1b;
+    --grey  : #827E74;
+    --red   : #c64935;
+    --yellow: #FFE144;
+    --white : #F1EEE3;
+
+    /* Fonts */ 
+    --title-font      : 'Permanent Marker', cursive;
+    --section-font    : 'Teko', sans-serif;
+    --normal-text-font: 'Lato', sans-serif;
+}
+
+/* Common */
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+h1, h2 {
+    font-family: var(--title-font);
+}
+
+h3, h4, h5 {
+    font-family: var(--section-font);
+}
+
+p {
+    font-family: var(--normal-text-font);
+}
+
+/* Header */
+
+header {
+    padding: 10px;
+    background: var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+header .title {
+    display: flex;
+    align-items: center;    
+}
+
+header .title h1 {
+    font-size: 30px;
+    color: var(--red);
+    -webkit-text-stroke: .25px black;
+    padding: 0 10px;
+}
+
+header img {
+    width: 50px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header nav li {
+    padding: 0 10px;
+}
+
+header nav li a {
+    font-size: 30px;
+    color: var(--red);
+    text-decoration: none;
+    font-family: var(--section-font);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -10px;
+} 
+
+header nav .underline {
+    width: 100%;
+    height: 2px;
+    background-color: var(--red);
+    animation: unfill-line .5s;
+    animation-fill-mode: forwards;
+}
+
+header nav li a:hover ~ .underline {
+    animation: fill-line .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fill-line {
+    from {
+        width: 0%
+    } to {
+        width: 100%;
+    }
+}
+
+@keyframes unfill-line {
+    from {
+        width: 100%;
+    } to {
+        width: 0%;
+    }
+}
+
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer h5 {
+    font-size: 30px;
+}
+
+footer p {
+    padding-left: 10px;
+}

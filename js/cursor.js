@@ -1,5 +1,14 @@
 "use strict"
 
+function isTouchDevice () {  
+    try {  
+        document.createEvent("TouchEvent");  
+        return true;  
+    } catch (e) {  
+        return false;  
+    }  
+}
+
 class Cursor {
     constructor () {
         this.cursor = document.createElement('div');
@@ -39,8 +48,8 @@ class Cursor {
 
     Events () {
         window.addEventListener ("mousemove", (e) => {
-            this.mouse.x = e.clientX;
-            this.mouse.y = e.clientY;
+            this.mouse.x = e.clientX - 8;
+            this.mouse.y = e.clientY - 8;
 
             this.translation.x += (this.mouse.x - this.translation.x)
             this.translation.y += (this.mouse.y - this.translation.y)
@@ -53,4 +62,6 @@ class Cursor {
     }
 }
 
-let cursor = new Cursor ()
+if (!isTouchDevice()) {
+    let cursor = new Cursor ()
+}
