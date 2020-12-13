@@ -1,5 +1,57 @@
-main
+main article {
+    padding: 20px 100px;
+    display: flex;
+    gap: 10px;
+    background-color: var(--white);
+}
+
+main section {
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--black);
+    min-height: 825px;
+    animation: shift-down .5s;
+    animation-fill-mode: forwards;
+}
+
+main section:hover {
+    animation: shift-up .5s;
+    animation-fill-mode: forwards;
+}
 
 main section h3 {
-    font-size: 100px;
+    padding: 10px;
+    padding-bottom: 0;
+    font-size: 75px;
+    color: var(--black);
+    letter-spacing: .125rem;
+    line-height: 6rem;
+    text-align: center;
+    border-bottom: var(--red) solid 5px;
+    background-color: var(--red);
+}
+
+main section ul {
+    padding: 30px 60px;
+    list-style: circle;
+}
+
+main section ul li {
+    font-size: 30px;
+    color: var(--grey);
+    font-family: var(--normal-text-font);
+}
+
+@keyframes shift-up {
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes shift-down {
+    from {
+        transform: translateY(-10px);
+    } to {
+        transform: translateY(0);
+    }
 }
