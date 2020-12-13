@@ -44,6 +44,10 @@ p {
     font-family: var(--normal-text-font);
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Header */
 
 header {
@@ -136,4 +140,10 @@ footer h5 {
 
 footer p {
     padding-left: 10px;
+    color: var(--grey);
+}
+
+footer a {
+    text-decoration: underline;
+    color: var(--red);
 }
