@@ -74,7 +74,6 @@ header .title {
 header .title h1 {
     font-size: 30px;
     color: var(--red);
-    -webkit-text-stroke: .25px black;
     padding: 0 10px;
 }
 
@@ -168,4 +167,29 @@ footer a {
 ::-webkit-scrollbar-thumb {
     background-color: var(--red);
     border-radius: 2.5px;
+}
+
+/* Media */
+@media (max-width: 420px) {
+    header {
+        padding: 5px;
+    }
+    
+    header .title h1 {
+        font-size: 20px;
+        padding: 0 10px;
+        letter-spacing: 2.5px;
+    }
+    
+    header img {
+        width: 30px;
+    }
+    
+    header nav li {
+        padding: 0 5px;
+    }
+    
+    header nav li a {
+        font-size: 20px;
+    } 
 }

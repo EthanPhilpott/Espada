@@ -117,6 +117,7 @@
 .core-values p {
     font-size: 30px;
     margin-bottom: 50px;
+    padding: 0 40px;
 }
 
 .core-values .cv-left {
@@ -125,7 +126,7 @@
 
 /* Medias */
 
-@media (max-width: 1314px) {
+@media (max-width: 1450px) {
     .opening-info p {
         display: none;
     }
@@ -152,7 +153,7 @@
     }
 
     .opening-info {
-        padding: 25%;
+        padding: 30px;
     }
     
     .opening-info h2 {
@@ -174,6 +175,7 @@
     .core-values p {
         font-size: 30px;
         margin-bottom: 25px;
+        padding: 0 30px;
     }
     
     .core-values .cv-left {
@@ -220,6 +222,7 @@
     .core-values p {
         font-size: 25px;
         margin-bottom: 50px;
+        padding: 0 20px;
     }
     
     .core-values .cv-left {
@@ -227,3 +230,103 @@
     }
 }
 
+@media (max-width: 545px) {
+    .opening-info {
+        padding: 30px;
+    }
+    
+    .opening-info h2 {
+        font-size: 100px;
+    }
+
+    .opening {
+        height: calc(100vh - 70px);
+        object-position: 0% 50%;
+        background-image: url("../images/jesus-chirst-how-many-times-do-I-need-shrink-this.png");
+    }
+
+    .history {
+        padding: 25px;
+    }
+    
+    .history h3 {
+        font-size: 50px;
+        line-height: 4rem;
+    }
+    
+    .history p {
+        font-size: 20px;
+        padding: 0 25px;
+    }
+
+    .core-values {
+        padding: 25px;
+    }
+    
+    .core-values h3 {
+        font-size: 50px;
+        line-height: 4rem;
+    }
+    
+    .core-values h4 {
+        font-size: 30px;
+    }
+    
+    .core-values p {
+        font-size: 20px;
+        margin-bottom: 25px;
+        padding: 0 10px;
+    }
+    
+    .core-values .cv-left {
+        padding-right: 75px;
+    }
+}
+
+@media (max-width: 420px) {
+    .opening {
+        height: calc(100vh - 40px);
+    }
+}
+
+@media (max-width: 370px) {
+    .opening-info h2 {
+        font-size: 75px;
+    }
+
+    .history {
+        padding: 10px;
+    }
+    
+    .history h3 {
+        font-size: 30px;
+        line-height: 3rem;
+    }
+    
+    .history p {
+        font-size: 10px;
+        padding: 0 15px;
+    }
+
+    .core-values {
+        padding: 15px;
+    }
+    
+    .core-values h3 {
+        font-size: 30px;
+        line-height: 3rem;
+    }
+    
+    .core-values h4 {
+        font-size: 25px;
+    }
+    
+    .core-values p {
+        font-size: 10px;
+        margin-bottom: 15px;
+    }
+    
+    .core-values .cv-left {
+        padding-right: 50px;
+    }
+}
