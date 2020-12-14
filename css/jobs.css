@@ -63,3 +63,19 @@ main section:hover {
         background: linear-gradient(130deg, var(--black), var(--white), var(--black) 10%)
     }
 }
+
+@media (max-width: 851px) {
+    main section img {
+        display: none;
+    }
+}
+
+@media (max-width: 300px) {
+    main section h3 {
+        font-size: 30px;
+    }
+    
+    main section p {
+        font-size: 15px;
+    }
+}
