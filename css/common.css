@@ -26,6 +26,7 @@
 body {
     position: relative;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 ul, ol {
@@ -40,12 +41,16 @@ h3, h4, h5 {
     font-family: var(--section-font);
 }
 
-p {
-    font-family: var(--normal-text-font);
-}
-
 a {
     text-decoration: none;
+}
+
+fieldset {
+    border: none;
+}
+
+li, label, p, button {
+    font-family: var(--normal-text-font);
 }
 
 /* Header */

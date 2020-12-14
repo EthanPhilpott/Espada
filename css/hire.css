@@ -1,77 +1,251 @@
-/*everything here is default, do not touch*/
-*, *::after, *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    cursor: none;
+main .popup {
+    display: none;
 }
 
+main article {
+    background-color: var(--white);
+    padding: 50px 100px;
+    min-height: calc(100vh - 50px);
+}
 
-:root {
-    /* Variables */
-    --black: #1d1c1b;
-    --grey: #827E74;
-    --red: #C64935;
-    --yellow: #FFE144;
-    --white: #F1EEE3;
+h3 {
+    color: var(--black);
 }
-    
-/*the whole page*/
-html{
-    background-color: #6c0404;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%236c0404'/%3E%3Cstop offset='1' stop-color='%23dc4a4a'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%235c2222' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%235c2222' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2'%3E%3Cstop offset='0' stop-color='%235c2222' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%235c2222' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
-    background-attachment: fixed;
-    background-size: cover;
-    /*via SVG Websites*/
-    min-height: 100vh;
+
+/* job desc */
+
+.job-desc {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 40px;
 }
-body {
+
+.job-desc .images img {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.job-desc .display-image img {
+    width: 250px;
+    height: 250px;
+    border: solid var(--red) 5px;
+    margin: 10px 0;
+}
+
+.job-desc .clickable-images {
+    display: flex;
+    gap: 5px;
+}
+
+.job-desc .clickable-images img {
+    width: calc(250px / 6 - 5px);
+    height: calc(250px / 6 - 5px);
+    border: solid var(--red) 2.5px;
+}
+
+.job-desc h4 {
     text-align: center;
-    color: #F1EEE3;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    min-height: 100vh;
-}
-    
-    
-/*navbar*/
-h1 {
-    position: absolute;
-    left: 14rem;
-    top: 3rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 3rem;
-}
-nav {
-    background-color: var(--black);
-    text-align: right;
-    padding: 3.90rem 50px;
-    box-shadow: 3rem 0rem 3rem black;
-    margin-top: -20px;
-}
-li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 20px 20px;
-}
-a {
-    color: #F1EEE3;
-    text-decoration: none;
-    border: black 2px;
-}
-a:hover {
-    color: var(--red);
+    font-size: 25px;
+    color: var(--black);
 }
 
-/*images*/
-#logo{
-    position: absolute;
-    width: 260px;
-    height: 130px;
-    right: 80rem;
-    top: 15px;
+.job-desc h3 {
+    font-size: 100px;
+    margin-bottom: -35px;
 }
 
-footer{
-    padding: 3rem;
+.job-desc .title p {
+    color: var(--grey);
+    font-size: 30px
 }
-/*everything below is unique to this css file*/
+
+/* reqr */
+
+.reqr h3 {
+    font-size: 50px;
+    line-height: 3rem;
+}
+
+.reqr ul {
+    list-style: circle;
+    padding-left: 40px;
+}
+
+.reqr ul li {
+    font-size: 25px;
+    color: var(--grey);
+}
+
+/* form */
+
+.bottom {
+    display: flex;
+    gap: 100px;
+}
+
+.form h3 {
+    font-size: 50px;
+    line-height: 3rem;
+}
+
+.form label {
+    font-size: 25px;
+    width: 75px;
+    color: var(--grey);
+}
+
+.form .user-info {
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form .user-info .side-by-side {
+    display: flex;
+    align-items: center;
+}
+
+.form .user-info input {
+    min-width: 100px;
+    height: 25px;
+    margin: 0 20px;
+}
+
+.form form {
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+}
+
+.form form fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resume img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.resume input {
+    outline: none;
+}
+
+.submit-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.submit-button div {
+    width: 200px;
+    height: 50px;
+    outline: none;
+    font-size: 20px;
+    background-color: var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--normal-text-font);
+    border: solid 2px var(--black);
+    animation: unsheen .5s;
+    animation-fill-mode: forwards;
+}
+
+.submit-button div:hover {
+    animation: sheen .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes unsheen {
+    from {
+        background: linear-gradient(130deg, var(--red), var(--white), var(--red) 20%)
+    } to {
+        background-color: var(--red);
+    }
+}
+
+@keyframes sheen {
+    to {
+        background: linear-gradient(130deg, var(--red), var(--white), var(--red) 20%)
+    }
+}
+
+#sub1 {
+    display: none;
+}
+
+#res1 {
+    display: none;
+}
+
+@media (max-width: 1573px) {
+    .job-desc-text {
+        display: none;
+    }
+
+    .job-desc h3 {
+        font-size: 100px;
+        margin-top: -100px;
+    }
+}
+
+@media (max-width: 1350px) {
+    #sub1 {
+        margin-top: 70px;
+        display: block;
+    }
+
+    #sub2 {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .bottom {
+        width: 700px;
+    }
+
+    #res2 {
+        display: none;
+    }
+
+    #res1 {
+        display: block;
+        display: flex;
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1020px) {
+    #job-title {
+        display: none
+    }
+
+    #display-image {
+        width: 300px;
+        height: 300px;
+    }
+
+    .top {
+        width: 250px;
+        margin: 0 150px;
+    }
+
+    .job-desc .clickable-images img {
+        width: calc(300px / 6 - 5px);
+        height: calc(300px / 6 - 5px);
+        border: solid var(--red) 2.5px;
+    }
+}

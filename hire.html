@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esapada: Hire</title>
-    <link rel="stylesheet" href="css/clients.css">
+    <link rel="stylesheet" href="css/hire.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="icon" href="images/recoloredLogo.png" type="image/x-icon">
 
@@ -41,44 +41,86 @@
     </header>
 
     <main>
-        <!-- Again, just set the popup to "display: none;" for now and I will do the rest -->
         <div class="popup">
             <h2>Thank you!</h2>
             <h3>We will get back to you as soon as possible</h3>
         </div>
 
         <article>
-            <div class="job">
-                <!-- This is tempoarry infomation that will be replaced later using js. Just leave it be for now -->
-                <h2>The Job Title (Will be replaced later with js)</h2>
-                <p>The job desc: Aute pariatur excepteur ad eu consectetur esse anim exercitation fugiat velit.
-                    Adipisicing labore enim ad velit do ex labore minim. Occaecat dolore sunt non consequat proident.
-                    Consequat ex esse quis ea cupidatat officia consectetur Lorem velit esse. Eu sunt tempor qui nulla
-                    ea ad veniam cillum. Ut officia occaecat ut consequat est ipsum id. Culpa consequat ad in anim
-                    commodo eu dolore anim enim. Ex commodo in nostrud esse consectetur nisi est occaecat ut amet tempor
-                    mollit.</p>
+            <div class="top">
+                <section class="job-desc">
+                    <div class="images">
+                        <div class="display-image">
+                            <img src="images/police-officer.jpg" alt="security guard" id="display-image">
+                        </div>
+                        <div class="clickable-images">
+                            <img src="images/police-officer.jpg" alt="secuirty guard">
+                            <img src="images/matial-arts.jpg" alt="self-defense">
+                            <img src="images/solgier.jpg" alt="solgier">
+                            <img src="images/camera.jpg" alt="camera">
+                            <img src="images/suit.jpg" alt="suit">
+                            <img src="images/driver.jpeg" alt="driver">
+                        </div>
+                        <h4>Click the Images To Switch Jobs</h4>
+                    </div>
+                    
+                    <div class="title">
+                        <h3 id="job-title">Secuirty Guard</h3>
+                        <p id="job-desc-text" class="job-desc-text">Secures premises and personnel by patrolling property; monitoring surveillance equipment; inspecting buildings, equipment, and access points; permitting entry. Obtains help by sounding alarms. Prevents losses and damage by reporting irregularities; informing violators of policy and procedures; restraining trespassers.</p>
+                    </div>
+                </section>
             </div>
+            
+            <div class="bottom">
+                <section class="reqr">
+                    <h3>Requirements</h3>
+                    <ul>
+                        <li>21 and older</li>
+                        <li>GED or High school diploma</li>
+                        <li>Background check no criminal history</li>
+                        <li>Guard card</li>
+                    </ul>
+                </section>
+    
+                <section class="form">
+                    <form action="data.json">
+                        <!-- Feel Free to add any other information you find nessisary -->
+                        <fieldset class="user-info">
+                            <h3>Contact Info</h3>
+                            <div class="side-by-side">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name">
+                            </div>
+                            <div class="side-by-side">
+                                <label for="email">Email</label>
+                                <input type="text" name="email" id="email">
+                            </div>
+                            <div class="side-by-side">
+                                <label for="phone">Phone</label>
+                                <input type="text" name="phone" id="phone">
+                            </div>
 
-            <div class="form">
-                <h3>Contact Info</h3>
+                            <div class="resume" id="res1">
+                                <h3>Resume</h3>
+                                <input type="file" accept=".pdf, .docx, .doc" name="resumeInput" id="resume-input">
+                            </div>
 
-                <!-- Feel Free to add any other information you find nessisary -->
-
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name">
-                <label for="email">Email</label>
-                <input type="text" name="email" id="email">
-                <label for="phone">Phone</label>
-                <input type="text" name="phone" id="phone">
-            </div>
-
-            <div class="resume">
-                <label for="resumeInput">Resume</label>
-                <input type="file" name="resumeInput" id="resumeInput">
-            </div>
-
-            <div class="submit-button">
-                <button type="submit">Submit Resquest</button>
+                            <div class="submit-button" id="sub1">
+                                <div>Submit Resquest</div>
+                            </div>
+                        </fieldset>
+                        
+                        <fieldset class="resume" id="res2">
+                            <h3>Resume</h3>
+                            <img src="images/blank-resume.jpeg" alt="blank resume" id="resume-pic">
+                            <input type="file" accept=".pdf, .docx, .doc" name="resumeInput" id="resume-input">
+                        </fieldset>
+        
+                        <fieldset class="submit-button" id="sub2">
+                            <div>Submit Resquest</div>
+                        </fieldset>
+                    </form>
+                </section>
             </div>
         </article>
     </main>
@@ -98,11 +140,16 @@
             <p>Alisson Corrales</p>
         </div>
         <div class="legal">
-            <h5>Legal Information</h5>
+            <h5>Legal</h5>
             <p>© Copyright Espada 2020</p>
         </div>
         <div class="attributions">
             <h5>Attributions</h5>
+            <p>Officer Photo by <a href="https://unsplash.com/@alecfavale?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Alec Favale</a> on <a href="https://unsplash.com/s/photos/security-guard?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
+            <p>Karate Photo by <a href="https://unsplash.com/@h4x0r3?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Thao Le Hoang</a> on <a href="https://unsplash.com/s/photos/martial-arts?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
+            <p>Soliger Photo by <a href="https://unsplash.com/@spanic?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Damir Spanic</a> on <a href="https://unsplash.com/s/photos/armed?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
+            <p>Camera Photo by <a href="https://unsplash.com/@victor_g?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Victor Garcia</a> on <a href="https://unsplash.com/s/photos/security-camera?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
+            <p>Suit Photo by <a href="https://unsplash.com/@ruthson_zimmerman?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Ruthson Zimmerman</a> on <a href="https://unsplash.com/s/photos/wheel?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
         </div>
     </footer>
 
