@@ -1,5 +1,13 @@
 "use strict"
 
+let resumeButton = document.getElementById('resume-input')
+let resumePicture = document.getElementById('resume-pic')
+
+resumeButton.addEventListener('input', (e) => {
+    console.log(URL.createObjectURL(e.target.files[0]))
+    resumePicture.src = URL.createObjectURL(e.target.files[0])
+}) 
+
 const mainImg = document.getElementById('display-image') 
 const title   = document.getElementById('job-title')
 const desc    = document.getElementById('job-desc-text')
