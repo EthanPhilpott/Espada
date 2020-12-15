@@ -7,11 +7,6 @@
     --red   : #c64935;
     --yellow: #FFE144;
     --white : #F1EEE3;
-
-    /* Fonts */ 
-    --title-font      : 'Permanent Marker', cursive;
-    --section-font    : 'Teko', sans-serif;
-    --normal-text-font: 'Lato', sans-serif;
 }
 
 main .popup {
@@ -78,10 +73,6 @@ h3 {
 
 /* reqr */
 
-.reqr {
-    
-}
-
 .reqr h3 {
     font-size: 50px;
     line-height: 3rem;
@@ -90,7 +81,6 @@ h3 {
 .reqr ul {
     list-style: circle;
     padding-left: 40px;
-    width: 300px;
 }
 
 .reqr ul li {
