@@ -1,0 +1,71 @@
+:root {
+    /* Variables */
+
+    /* Main */
+    --black : #1d1c1b;
+    --grey  : #827E74;
+    --red   : #c64935;
+    --yellow: #FFE144;
+    --white : #F1EEE3;
+}
+
+/*main*/
+
+main{
+    background-color: var(--white);
+}
+
+main .popup {
+    display: none;
+}
+
+main article {
+    padding: 50px 60px;
+    min-height: calc(100vh - 50px);
+}
+
+
+/* form */
+
+.form{
+    display: inline-block;
+    padding: 2rem;
+}
+
+.form h3{
+    font-size: 50px;
+    line-height: 3rem;
+}
+
+.form label{
+    font-size: 25px;
+    color: var(--grey);
+}
+
+.form input{
+    display: flex;
+    justify-content: center;
+    min-width: 100px;
+    height: 25px;
+    margin: 0 10px;
+}
+
+
+/*contact info*/
+.contact-info{
+    display: inline-block;
+    padding: 2rem;
+}
+
+
+/*payment info*/
+.payment-info{
+    display: inline-block;
+    padding: 2rem;
+}
+
+
+.package{
+    padding: 2rem;
+}
+

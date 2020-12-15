@@ -1,3 +1,14 @@
+:root {
+    /* Variables */
+
+    /* Main */
+    --black : #1d1c1b;
+    --grey  : #827E74;
+    --red   : #c64935;
+    --yellow: #FFE144;
+    --white : #F1EEE3;
+}
+
 main .popup {
     display: none;
 }
@@ -70,7 +81,6 @@ h3 {
 .reqr ul {
     list-style: circle;
     padding-left: 40px;
-    width: 300px;
 }
 
 .reqr ul li {
