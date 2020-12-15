@@ -118,3 +118,28 @@ function Select (selc) {
     }
 }
 
+const popup  = document.getElementById('popup')
+const submit1 = document.getElementById('sub1')
+const submit2 = document.getElementById('sub2')
+
+submit1.addEventListener('click', () => {
+    console.log('hit')
+    popup.style.display = "block";
+    setTimeout(() => {
+        window.onclick = () => {
+            popup.style.display = "none"
+            window.onclick = () => {}
+        }
+    }, 1000)
+})
+submit2.addEventListener('click', () => {
+    console.log('hit')
+    popup.style.display = "block";
+    setTimeout(() => {
+        window.onclick = () => {
+            popup.style.display = "none"
+            window.onclick = () => {}
+        }
+    }, 1000)
+})
+

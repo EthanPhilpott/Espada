@@ -7,6 +7,7 @@ main .popup {
     background-color: var(--black);
     border: solid 3px var(--white);
     padding: 30px 20px;
+    display: none;
 }
 
 main .popup .title {
