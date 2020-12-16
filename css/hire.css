@@ -10,26 +10,12 @@ main .popup {
     display: none;
 }
 
-<<<<<<< HEAD
-    /* Main */
-    --black : #1d1c1b;
-    --grey  : #827E74;
-    --red   : #c64935;
-    --yellow: #FFE144;
-    --white : #F1EEE3;
-
-    /* Fonts */ 
-    --title-font      : 'Permanent Marker', cursive;
-    --section-font    : 'Teko', sans-serif;
-    --normal-text-font: 'Lato', sans-serif;
-=======
 main .popup .title {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
     margin-bottom: 25px;
->>>>>>> 3d3bda8572e2dfe6ad59d5597530646a5e98e12b
 }
 
 main .popup img {
