@@ -41,14 +41,17 @@
             </header>
     
             <main>
-                <div class="popup">
-                    <h2>Thank you!</h2>
-                    <h3>We will get back to you as soon as possible</h3>
+                <div class="popup" id="popup">
+                    <div class="title">
+                        <img src="images/recoloredLogo.png" alt="logo">
+                        <h3>Thank you!</h3>
+                    </div>
+                    <p>We will get back to you as soon as possible; please heed your email for further inquiries.</p>
                 </div>
     
                 <article>
                     <section class="form">
-                        <div class="contact-info">
+                        <div class="contact-info thingy">
                             <h3>Contact Info</h3>
                             <div class="info-list">
                                 <label for="fname">First Name</label>
@@ -68,39 +71,40 @@
                             </div>
                         </div>
                         
-                        <div class="payment-info">
+                        <div class="payment-info thingy">
                             <h3>Credit Card Info</h3>
                             <div class="info-list">
-                            <label for="">Card Number</label>
-                            <input type="text" name="cc" id="cc">
+                                <label for="cc">Card Number</label>
+                                <input type="text" name="cc" id="cc">
                             </div>
                             <div class="info-list">
-                            <label for="cardholder">Cardholder Name</label>
-                            <input type="text" name="cardholder" id="cardholder">
+                                <label for="cardholder">Cardholder Name</label>
+                                <input type="text" name="cardholder" id="cardholder">
                             </div>
                             <div class="info-list">
-                            <label for="expire">Expiration Date</label>
-                            <input type="text" name="expire" id="expire">
+                                <label for="expire">Expiration Date</label>
+                                <input type="text" name="expire" id="expire">
                             </div>
                             <div class="info-list">
-                            <label for="ccv">CCV Numbers</label>
-                            <input type="text" name="ccv" id="ccv">
+                                <label for="ccv">CCV Numbers</label>
+                                <input type="text" name="ccv" id="ccv">
                             </div>
                         </div>
     
-                        <div class="package">
+                        <div class="package thingy">
                             <h3>Select a Package</h3>
                             <select name="packageType" id="packageType">
                                 <option value="silver">Silver</option>
-                                <option value="silver">Gold</option>
-                                <option value="silver">Platnum</option>
-                                <option value="silver">Self Defense</option>
+                                <option value="gold">Gold</option>
+                                <option value="platnum">Platnum</option>
+                                <option value="self-defense">Self Defense</option>
+                                <option value="butler">Butler</option>
                             </select>
                         </div>
     
-                        <fieldset class="submit" type="submit">
-                            <div>Submit</div>
-                        </fieldset>
+                        <div class="submit" type="submit" id="sub1">
+                            <div>Submit</div >
+                        </div>
                     </section>
                 </article>
             </main>

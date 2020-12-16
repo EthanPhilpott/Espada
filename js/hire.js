@@ -23,7 +23,6 @@ let si = document.getElementsByClassName('si');
 for (let i = 0; i < si.length; i++) {
     si[i].value = String(i + 1)
     si[i].addEventListener('click', (e) => {
-        console.log(e.path[0].value)
         Select(e.path[0].value)
     })
 }
@@ -142,4 +141,3 @@ submit2.addEventListener('click', () => {
         }
     }, 1000)
 })
-
