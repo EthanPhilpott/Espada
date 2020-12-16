@@ -1,5 +1,13 @@
 "use strict"
 
+let resumeButton = document.getElementById('resume-input')
+let resumePicture = document.getElementById('resume-pic')
+
+resumeButton.addEventListener('input', (e) => {
+    console.log(URL.createObjectURL(e.target.files[0]))
+    resumePicture.src = URL.createObjectURL(e.target.files[0])
+}) 
+
 const mainImg = document.getElementById('display-image') 
 const title   = document.getElementById('job-title')
 const desc    = document.getElementById('job-desc-text')
@@ -109,4 +117,29 @@ function Select (selc) {
             break;
     }
 }
+
+const popup  = document.getElementById('popup')
+const submit1 = document.getElementById('sub1')
+const submit2 = document.getElementById('sub2')
+
+submit1.addEventListener('click', () => {
+    console.log('hit')
+    popup.style.display = "block";
+    setTimeout(() => {
+        window.onclick = () => {
+            popup.style.display = "none"
+            window.onclick = () => {}
+        }
+    }, 1000)
+})
+submit2.addEventListener('click', () => {
+    console.log('hit')
+    popup.style.display = "block";
+    setTimeout(() => {
+        window.onclick = () => {
+            popup.style.display = "none"
+            window.onclick = () => {}
+        }
+    }, 1000)
+})
 
