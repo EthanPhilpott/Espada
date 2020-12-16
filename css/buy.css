@@ -31,8 +31,16 @@ main article {
 /* form */
 
 .form {
-    display: inline-block;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
     padding: 2rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.form div {
+    width: calc((100vw - 50px) / 3 - 50px); 
 }
 
 .form h3 {
@@ -64,23 +72,24 @@ main article {
 /*contact info*/
 
 .contact-info {
-    display: inline-block;
+    /* display: inline-block; */
     padding: 2rem;
 }
 
 /*payment info*/
 
 .payment-info {
-    display: inline-block;
+    /* display: inline-block; */
     padding: 2rem;
 }
 
 /*package*/
 
 .package {
-    display: inline-block;
+    /* display: inline-block; */
     padding: 2rem;
     height: 10rem;
+    width: 100px;
 }
 
 .package select {
