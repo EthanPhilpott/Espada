@@ -7,6 +7,11 @@
     --red   : #c64935;
     --yellow: #FFE144;
     --white : #F1EEE3;
+
+    /* Fonts */ 
+    --title-font      : 'Permanent Marker', cursive;
+    --section-font    : 'Teko', sans-serif;
+    --normal-text-font: 'Lato', sans-serif;
 }
 
 main .popup {

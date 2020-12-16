@@ -1,17 +1,21 @@
 :root {
     /* Variables */
-
     /* Main */
-    --black : #1d1c1b;
-    --grey  : #827E74;
-    --red   : #c64935;
+    --black: #1d1c1b;
+    --grey: #827E74;
+    --red: #c64935;
     --yellow: #FFE144;
-    --white : #F1EEE3;
+    --white: #F1EEE3;
+
+    /* Fonts */
+    --title-font: 'Permanent Marker', cursive;
+    --section-font: 'Teko', sans-serif;
+    --normal-text-font: 'Lato', sans-serif;
 }
 
 /*main*/
 
-main{
+main {
     background-color: var(--white);
 }
 
@@ -24,48 +28,92 @@ main article {
     min-height: calc(100vh - 50px);
 }
 
-
 /* form */
 
-.form{
+.form {
     display: inline-block;
     padding: 2rem;
 }
 
-.form h3{
+.form h3 {
     font-size: 50px;
     line-height: 3rem;
 }
 
-.form label{
+.form label {
     font-size: 25px;
     color: var(--grey);
 }
 
-.form input{
+.form input {
     display: flex;
     justify-content: center;
-    min-width: 100px;
+    min-width: 250px;
     height: 25px;
-    margin: 0 10px;
+    margin: 0 0px;
+    padding: 1rem;
 }
 
+/*info-list*/
+
+.info-list {
+    padding: 5px;
+}
 
 /*contact info*/
-.contact-info{
+
+.contact-info {
     display: inline-block;
     padding: 2rem;
 }
-
 
 /*payment info*/
-.payment-info{
+
+.payment-info {
     display: inline-block;
     padding: 2rem;
 }
 
+/*package*/
 
-.package{
+.package {
+    display: inline-block;
     padding: 2rem;
+    position: ;
 }
 
+/*submit button*/
+
+.submit div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    outline: none;
+    background-color: var(--red);
+    font-size: 20px;
+    font-family: var(--normal-text-font);
+    border: solid 2px var(--black);
+    animation: unsheen .5s;
+    animation-fill-mode: forwards;
+}
+
+.submit div:hover {
+    animation: sheen .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes unsheen {
+    from {
+        background: linear-gradient(130deg, var(--red), var(--white), var(--red) 20%)
+    }to {
+        background-color: var(--red);
+    }
+}
+
+@keyframes sheen {
+    to {
+        background: linear-gradient(130deg, var(--red), var(--white), var(--red) 20%)
+    }
+}
