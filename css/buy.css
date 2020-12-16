@@ -72,27 +72,25 @@ main article {
 /*contact info*/
 
 .contact-info {
-    /* display: inline-block; */
     padding: 2rem;
 }
 
 /*payment info*/
 
 .payment-info {
-    /* display: inline-block; */
     padding: 2rem;
 }
 
 /*package*/
 
 .package {
-    /* display: inline-block; */
     padding: 2rem;
     height: 10rem;
     width: 100px;
 }
 
 .package select {
+    margin-top: 2rem;
     min-width: 280px;
     height: 35px;
     font-size: 18px;
@@ -102,7 +100,8 @@ main article {
 
 .submit {
     display: flex;
-    padding: 2rem;
+    padding-top: 1.5rem;
+    padding-left: 51rem;
     justify-content: flex-end;
 }
 
